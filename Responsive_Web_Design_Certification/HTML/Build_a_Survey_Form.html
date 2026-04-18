@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Title -->
+    <h1 id="title">User Experience Survey</h1>
+
+    <!-- Description -->
+    <p id="description">Help us improve by sharing your experience.</p>
+
+    <!-- Form -->
+    <form id="survey-form">
+
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        placeholder="Enter your name" 
+        required
+      >
+
+      <br><br>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="Enter your email" 
+        required
+      >
+
+<br><br>
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age</label>
+      <input 
+        type="number" 
+        id="number" 
+        placeholder="Enter your age" 
+        min="10" 
+        max="100"
+      >
+<br><br>
+
+
+      <!-- Dropdown -->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="social">Social Media</option>
+        <option value="friends">Friends</option>
+      </select>
+<br><br>
+
+
+      <!-- Radio buttons -->
+      <label>Would you recommend us?</label>
+      <input type="radio" name="recommend" value="yes" class="inline"> Yes
+      <input type="radio" name="recommend" value="no" class="inline"> No
+<br><br>
+      <!-- Checkboxes -->
+      <label>What features do you like?</label>
+      <input type="checkbox" value="design" class="inline"> Design
+      <input type="checkbox" value="performance" class="inline"> Performance
+      <input type="checkbox" value="support" class="inline"> Support
+
+
+<br><br>
+      <!-- Textarea -->
+      <label for="comments">Additional Comments</label>
+      <br>
+      <textarea id="comments" rows="4" placeholder="Write your thoughts..."></textarea>
+      <br><br>
+
+      <!-- Submit -->
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+</html>
