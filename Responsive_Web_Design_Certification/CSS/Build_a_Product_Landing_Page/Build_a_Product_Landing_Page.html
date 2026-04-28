@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Product Landing Page</title>
+<link rel="stylesheet" href="styles.css">
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 <body>
-  <header id = "header">
-    <img id = "header-img" src = "https://static.vecteezy.com/system/resources/previews/018/836/905/non_2x/logo-with-a-blue-eye-free-vector.jpg" alt = "logo">
-    <h1>Contacts & Glasses </h1>
 
-    <nav id = "nav-bar">
+<header id="header">
+  <div id="title">
+    <i id="header-img" class="fa-regular fa-eye"></i>
+    <h1>Contacts & Glasses</h1>
+  </div>
+  <div>
+    <nav id="nav-bar">
       <ul>
-        <li><a class = "nav-link" href = "#features">Features</a></li>
-        <li><a class = "nav-link" href = "#how-it-works">How It Works</a></li>
-        <li><a class = "nav-link" href = "#subscribe">Subscribe</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#subscribe">Subscribe</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section id = "features">
-      <h2>Features</h2>
-      <div class = "feature-point">
-        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M175.3 160C161.3 160 148.8 169.2 144.7 182.6L102.4 320L256 320C273.7 320 288 334.3 288 352L352 352C352 334.3 366.3 320 384 320L537.6 320L495.3 182.6C491.2 169.2 478.8 160 464.7 160L432 160C414.3 160 400 145.7 400 128C400 110.3 414.3 96 432 96L464.7 96C506.8 96 544.1 123.5 556.5 163.8L601.9 311.3C606 324.5 608 338.2 608 352L608 448C608 501 565 544 512 544L448 544C395 544 352 501 352 448L352 416L288 416L288 448C288 501 245 544 192 544L128 544C75 544 32 501 32 448L32 352C32 338.2 34.1 324.5 38.1 311.3L83.5 163.8C95.9 123.5 133.1 96 175.3 96L208 96C225.7 96 240 110.3 240 128C240 145.7 225.7 160 208 160L175.3 160zM96 384L96 448C96 465.7 110.3 480 128 480L192 480C209.7 480 224 465.7 224 448L224 384L96 384zM512 480C529.7 480 544 465.7 544 448L544 384L416 384L416 448C416 465.7 430.3 480 448 480L512 480z"/></svg>
+<main>
 
-        <p class = "point">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <!-- tiny addition: hero text block -->
+  <div class="hero">
+    <h2>See the world clearly.</h2>
+    <p>Premium eyewear and contacts for every lifestyle.</p>
+  </div>
 
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-point">
+        <i class="fa-solid fa-glasses"></i>
+        <p class="point">Precision-crafted lenses that reduce eye strain from screens, sunlight, and everyday wear.</p>
       </div>
-
-      <div class = "feature-point">
-        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M175.3 160C161.3 160 148.8 169.2 144.7 182.6L102.4 320L256 320C273.7 320 288 334.3 288 352L352 352C352 334.3 366.3 320 384 320L537.6 320L495.3 182.6C491.2 169.2 478.8 160 464.7 160L432 160C414.3 160 400 145.7 400 128C400 110.3 414.3 96 432 96L464.7 96C506.8 96 544.1 123.5 556.5 163.8L601.9 311.3C606 324.5 608 338.2 608 352L608 448C608 501 565 544 512 544L448 544C395 544 352 501 352 448L352 416L288 416L288 448C288 501 245 544 192 544L128 544C75 544 32 501 32 448L32 352C32 338.2 34.1 324.5 38.1 311.3L83.5 163.8C95.9 123.5 133.1 96 175.3 96L208 96C225.7 96 240 110.3 240 128C240 145.7 225.7 160 208 160L175.3 160zM96 384L96 448C96 465.7 110.3 480 128 480L192 480C209.7 480 224 465.7 224 448L224 384L96 384zM512 480C529.7 480 544 465.7 544 448L544 384L416 384L416 448C416 465.7 430.3 480 448 480L512 480z"/></svg>
-
-        <p class = "point">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+      <div class="feature-point">
+        <i class="fa-solid fa-glasses"></i>
+        <p class="point">Daily, bi-weekly, and monthly contact options designed for all-day comfort.</p>
       </div>
-
-      <div class = "feature-point">
-        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M175.3 160C161.3 160 148.8 169.2 144.7 182.6L102.4 320L256 320C273.7 320 288 334.3 288 352L352 352C352 334.3 366.3 320 384 320L537.6 320L495.3 182.6C491.2 169.2 478.8 160 464.7 160L432 160C414.3 160 400 145.7 400 128C400 110.3 414.3 96 432 96L464.7 96C506.8 96 544.1 123.5 556.5 163.8L601.9 311.3C606 324.5 608 338.2 608 352L608 448C608 501 565 544 512 544L448 544C395 544 352 501 352 448L352 416L288 416L288 448C288 501 245 544 192 544L128 544C75 544 32 501 32 448L32 352C32 338.2 34.1 324.5 38.1 311.3L83.5 163.8C95.9 123.5 133.1 96 175.3 96L208 96C225.7 96 240 110.3 240 128C240 145.7 225.7 160 208 160L175.3 160zM96 384L96 448C96 465.7 110.3 480 128 480L192 480C209.7 480 224 465.7 224 448L224 384L96 384zM512 480C529.7 480 544 465.7 544 448L544 384L416 384L416 448C416 465.7 430.3 480 448 480L512 480z"/></svg>
-
-        <p class = "point">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+      <div class="feature-point">
+        <i class="fa-solid fa-glasses"></i>
+        <p class="point">Hundreds of frame styles crafted to complement every face shape and personality.</p>
       </div>
-    </section>
-
-    <section id = "how-it-works">
-      <h2>How It Works</h2>
-      <iframe id = "video" width="951" height="535" src="https://www.youtube.com/embed/sa22tJujK4Y" title="HOW IT WORKS | Contact Lenses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-
-    <section id = "subscribe">
-      <h2>Join our Newsletter</h2>
-      <form id = "form" action = "https://www.freecodecamp.org/email-submit" method = "POST">
-        <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required>
-        <input type = "submit" id = "submit">
-      </form>
-    </section>
-
-  </main>
-
-  <footer>
-    <div>
-      <ul>
-        <li><a href = "#">Privacy</a></li>
-        <li><a href = "#">Terms</a></li>
-        <li><a href = "#">Contact</a></li>
-      </ul>
-      <p>Copyright 2016, Original Trombones</p>
     </div>
-  </footer>
-</body>
+  </section>
 
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <iframe id="video" src="https://www.youtube.com/embed/sa22tJujK4Y" title="HOW IT WORKS | Contact Lenses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <section id="subscribe">
+    <h2>Join our Newsletter</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" id="submit" value="Subscribe">
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>Copyright 2016, Original Trombones</p>
+  </div>
+</footer>
+
+</body>
 </html>
