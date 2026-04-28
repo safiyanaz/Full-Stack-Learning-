@@ -1,0 +1,110 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+
+/* NAVBAR (LEFT SIDE) */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  border-right: 2px solid #ccc;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+#navbar h1 {
+  margin-bottom: 15px;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar li {
+  margin: 10px 0;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+#navbar a:hover {
+  color: #007BFF;
+}
+
+/* MAIN CONTENT */
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+  max-width: 900px;
+}
+
+#main-doc img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px; 
+}
+
+/* SECTIONS */
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section h2 {
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  margin-bottom: 10px;
+}
+
+.main-section ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* CODE BLOCK */
+code {
+  display: block;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------- */
+
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
