@@ -1,0 +1,119 @@
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merges borders */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Creates horizontal dividers */
+}
+
+tr:hover { background-color: #ddd; } /* Hover effect */
+
+
+tr[class="read"] {
+  background-image: linear-gradient(darkseagreen,forestgreen);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(lightpink,palevioletred);
+
+}
+
+tr[class="in-progress"]{
+  background-image: linear-gradient(peachpuff,tan);
+
+}
+
+span{
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  background-image: linear-gradient(darkred);
+  border: outset 2px black;
+  border-radius: 8px;
+  color: white;
+  margin: 5px; 
+  padding : 12px 24px;
+  height: 20px;
+  width: 80px;
+  place-items: center;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  background-image: linear-gradient(gold);
+  border: outset 2px black;
+  border-radius: 8px;
+  margin: 5px; 
+  padding : 12px 24px;
+  height: 20px;
+  width: 80px;
+  place-items: center;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+tr[class="read"] span[class="status"] {
+  background-image: linear-gradient(darkgreen);
+  border: outset 2px black;
+  border-radius: 8px;
+  color: white;
+  margin: 5px; 
+  padding : 12px 24px;
+  height: 20px;
+  width: 80px;
+  place-items: center;
+
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+/* Req 37-40: Target .status AND spans with class starting with "rate" */
+span[class="status"],
+span[class^="rate"] {
+  height: 20px;
+  width: 80px;
+  padding: 12px 24px;
+}
+
+span[class^="rate"] {
+  display: flex;        
+  align-items: center;
+  gap: 4px;
+  padding: 2px;
+  width: auto;
+}
+
+/* Req 41-47: Target spans that are direct children of spans with class starting with "rate" */
+span[class^="rate"] > span {
+  border: dashed 2px black;
+  border-radius: 50%;
+  margin: 1px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+/* Req 48-49: First child of spans containing word "one" in class */
+span[class~="one"] > span:nth-child(1) {
+  background-image: linear-gradient(lightsteelblue, steelblue);
+}
+
+/* Req 50-51: First two children of spans containing word "two" in class */
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(lightsteelblue, steelblue);
+}
+
+/* Req 52-53: All descendant spans of spans containing word "three" in class */
+span[class~="three"] span {
+  background-image: linear-gradient(lightsteelblue, steelblue);
+}
